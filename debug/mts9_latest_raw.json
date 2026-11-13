@@ -1,0 +1,266 @@
+[
+ {
+  "src_line_nbr": "1",
+  "sequence_level_nbr": "1",
+  "record_type_cd": "SL",
+  "classification_desc": "Receipts",
+  "current_month_rcpt_outly_amt": "null",
+  "current_fytd_rcpt_outly_amt": "null"
+ },
+ {
+  "src_line_nbr": "2",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "RSG",
+  "classification_desc": "Individual Income Taxes",
+  "current_month_rcpt_outly_amt": "186376346288.16",
+  "current_fytd_rcpt_outly_amt": "186376346288.16"
+ },
+ {
+  "src_line_nbr": "3",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "RSG",
+  "classification_desc": "Corporation Income Taxes",
+  "current_month_rcpt_outly_amt": "18042284142.96",
+  "current_fytd_rcpt_outly_amt": "18042284142.96"
+ },
+ {
+  "src_line_nbr": "4",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "RSG",
+  "classification_desc": "Social Insurance and Retirement Receipts:",
+  "current_month_rcpt_outly_amt": "null",
+  "current_fytd_rcpt_outly_amt": "null"
+ },
+ {
+  "src_line_nbr": "5",
+  "sequence_level_nbr": "3",
+  "record_type_cd": "RSG",
+  "classification_desc": "Employment and General Retirement",
+  "current_month_rcpt_outly_amt": "128626348038.47",
+  "current_fytd_rcpt_outly_amt": "128626348038.47"
+ },
+ {
+  "src_line_nbr": "6",
+  "sequence_level_nbr": "3",
+  "record_type_cd": "RSG",
+  "classification_desc": "Unemployment Insurance",
+  "current_month_rcpt_outly_amt": "2150345587.93",
+  "current_fytd_rcpt_outly_amt": "2150345587.93"
+ },
+ {
+  "src_line_nbr": "7",
+  "sequence_level_nbr": "3",
+  "record_type_cd": "RSG",
+  "classification_desc": "Other Retirement",
+  "current_month_rcpt_outly_amt": "697439823.09",
+  "current_fytd_rcpt_outly_amt": "697439823.09"
+ },
+ {
+  "src_line_nbr": "8",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "RSG",
+  "classification_desc": "Excise Taxes",
+  "current_month_rcpt_outly_amt": "5929495055.21",
+  "current_fytd_rcpt_outly_amt": "5929495055.21"
+ },
+ {
+  "src_line_nbr": "9",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "RSG",
+  "classification_desc": "Estate and Gift Taxes",
+  "current_month_rcpt_outly_amt": "3765792152.82",
+  "current_fytd_rcpt_outly_amt": "3765792152.82"
+ },
+ {
+  "src_line_nbr": "10",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "RSG",
+  "classification_desc": "Customs Duties",
+  "current_month_rcpt_outly_amt": "19217228460.18",
+  "current_fytd_rcpt_outly_amt": "19217228460.18"
+ },
+ {
+  "src_line_nbr": "11",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "RSG",
+  "classification_desc": "Miscellaneous Receipts",
+  "current_month_rcpt_outly_amt": "4134839053.95",
+  "current_fytd_rcpt_outly_amt": "4134839053.95"
+ },
+ {
+  "src_line_nbr": "12",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "SL",
+  "classification_desc": "Total",
+  "current_month_rcpt_outly_amt": "368940118602.77",
+  "current_fytd_rcpt_outly_amt": "368940118602.77"
+ },
+ {
+  "src_line_nbr": "13",
+  "sequence_level_nbr": "1",
+  "record_type_cd": "SL",
+  "classification_desc": "Net Outlays",
+  "current_month_rcpt_outly_amt": "null",
+  "current_fytd_rcpt_outly_amt": "null"
+ },
+ {
+  "src_line_nbr": "14",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "National Defense",
+  "current_month_rcpt_outly_amt": "128878982148.27",
+  "current_fytd_rcpt_outly_amt": "128878982148.27"
+ },
+ {
+  "src_line_nbr": "15",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "International Affairs",
+  "current_month_rcpt_outly_amt": "4478544602.39",
+  "current_fytd_rcpt_outly_amt": "4478544602.39"
+ },
+ {
+  "src_line_nbr": "16",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "General Science, Space, and Technology",
+  "current_month_rcpt_outly_amt": "3313779291.48",
+  "current_fytd_rcpt_outly_amt": "3313779291.48"
+ },
+ {
+  "src_line_nbr": "17",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "Energy",
+  "current_month_rcpt_outly_amt": "1875689497.98",
+  "current_fytd_rcpt_outly_amt": "1875689497.98"
+ },
+ {
+  "src_line_nbr": "18",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "Natural Resources and Environment",
+  "current_month_rcpt_outly_amt": "5451587841.93",
+  "current_fytd_rcpt_outly_amt": "5451587841.93"
+ },
+ {
+  "src_line_nbr": "19",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "Agriculture",
+  "current_month_rcpt_outly_amt": "17597908130.98",
+  "current_fytd_rcpt_outly_amt": "17597908130.98"
+ },
+ {
+  "src_line_nbr": "20",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "Commerce and Housing Credit",
+  "current_month_rcpt_outly_amt": "457491731.71",
+  "current_fytd_rcpt_outly_amt": "457491731.71"
+ },
+ {
+  "src_line_nbr": "21",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "Transportation",
+  "current_month_rcpt_outly_amt": "12984923519.61",
+  "current_fytd_rcpt_outly_amt": "12984923519.61"
+ },
+ {
+  "src_line_nbr": "22",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "Community and Regional Development",
+  "current_month_rcpt_outly_amt": "3595707793.74",
+  "current_fytd_rcpt_outly_amt": "3595707793.74"
+ },
+ {
+  "src_line_nbr": "23",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "Education, Training, Employment, and Social Services",
+  "current_month_rcpt_outly_amt": "13717884894.65",
+  "current_fytd_rcpt_outly_amt": "13717884894.65"
+ },
+ {
+  "src_line_nbr": "24",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "Health",
+  "current_month_rcpt_outly_amt": "93528269732.70",
+  "current_fytd_rcpt_outly_amt": "93528269732.70"
+ },
+ {
+  "src_line_nbr": "25",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "Medicare",
+  "current_month_rcpt_outly_amt": "170045487303.15",
+  "current_fytd_rcpt_outly_amt": "170045487303.15"
+ },
+ {
+  "src_line_nbr": "26",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "Income Security",
+  "current_month_rcpt_outly_amt": "58482931628.59",
+  "current_fytd_rcpt_outly_amt": "58482931628.59"
+ },
+ {
+  "src_line_nbr": "27",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "Social Security",
+  "current_month_rcpt_outly_amt": "142687221456.78",
+  "current_fytd_rcpt_outly_amt": "142687221456.78"
+ },
+ {
+  "src_line_nbr": "28",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "Veterans Benefits and Services",
+  "current_month_rcpt_outly_amt": "54298485848.95",
+  "current_fytd_rcpt_outly_amt": "54298485848.95"
+ },
+ {
+  "src_line_nbr": "29",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "Administration of Justice",
+  "current_month_rcpt_outly_amt": "8723223119.63",
+  "current_fytd_rcpt_outly_amt": "8723223119.63"
+ },
+ {
+  "src_line_nbr": "30",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "General Government",
+  "current_month_rcpt_outly_amt": "5004583094.96",
+  "current_fytd_rcpt_outly_amt": "5004583094.96"
+ },
+ {
+  "src_line_nbr": "31",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "Net Interest",
+  "current_month_rcpt_outly_amt": "103076056306.27",
+  "current_fytd_rcpt_outly_amt": "103076056306.27"
+ },
+ {
+  "src_line_nbr": "32",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "F",
+  "classification_desc": "Undistributed Offsetting Receipts",
+  "current_month_rcpt_outly_amt": "-55195091463.41",
+  "current_fytd_rcpt_outly_amt": "-55195091463.41"
+ },
+ {
+  "src_line_nbr": "33",
+  "sequence_level_nbr": "2",
+  "record_type_cd": "SL",
+  "classification_desc": "Total",
+  "current_month_rcpt_outly_amt": "773003666480.36",
+  "current_fytd_rcpt_outly_amt": "773003666480.36"
+ }
+]

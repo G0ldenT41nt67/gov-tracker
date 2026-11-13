@@ -1,0 +1,249 @@
+{
+ "latest": "2026-10-31",
+ "parsed_latest": {
+  "receipts": [
+   {
+    "name": "Individual Income Taxes",
+    "lvl": 2,
+    "fytd": 186376346288.16,
+    "month": 186376346288.16
+   },
+   {
+    "name": "Corporation Income Taxes",
+    "lvl": 2,
+    "fytd": 18042284142.96,
+    "month": 18042284142.96
+   },
+   {
+    "name": "Excise Taxes",
+    "lvl": 2,
+    "fytd": 5929495055.21,
+    "month": 5929495055.21
+   },
+   {
+    "name": "Estate and Gift Taxes",
+    "lvl": 2,
+    "fytd": 3765792152.82,
+    "month": 3765792152.82
+   },
+   {
+    "name": "Customs Duties",
+    "lvl": 2,
+    "fytd": 19217228460.18,
+    "month": 19217228460.18
+   },
+   {
+    "name": "Miscellaneous Receipts",
+    "lvl": 2,
+    "fytd": 4134839053.95,
+    "month": 4134839053.95
+   }
+  ],
+  "outlays": [
+   {
+    "name": "National Defense",
+    "lvl": 2,
+    "fytd": 128878982148.27,
+    "month": 128878982148.27
+   },
+   {
+    "name": "International Affairs",
+    "lvl": 2,
+    "fytd": 4478544602.39,
+    "month": 4478544602.39
+   },
+   {
+    "name": "General Science, Space, and Technology",
+    "lvl": 2,
+    "fytd": 3313779291.48,
+    "month": 3313779291.48
+   },
+   {
+    "name": "Energy",
+    "lvl": 2,
+    "fytd": 1875689497.98,
+    "month": 1875689497.98
+   },
+   {
+    "name": "Natural Resources and Environment",
+    "lvl": 2,
+    "fytd": 5451587841.93,
+    "month": 5451587841.93
+   },
+   {
+    "name": "Agriculture",
+    "lvl": 2,
+    "fytd": 17597908130.98,
+    "month": 17597908130.98
+   },
+   {
+    "name": "Commerce and Housing Credit",
+    "lvl": 2,
+    "fytd": 457491731.71,
+    "month": 457491731.71
+   },
+   {
+    "name": "Transportation",
+    "lvl": 2,
+    "fytd": 12984923519.61,
+    "month": 12984923519.61
+   },
+   {
+    "name": "Community and Regional Development",
+    "lvl": 2,
+    "fytd": 3595707793.74,
+    "month": 3595707793.74
+   },
+   {
+    "name": "Education, Training, Employment, and Social Services",
+    "lvl": 2,
+    "fytd": 13717884894.65,
+    "month": 13717884894.65
+   },
+   {
+    "name": "Health",
+    "lvl": 2,
+    "fytd": 93528269732.7,
+    "month": 93528269732.7
+   },
+   {
+    "name": "Medicare",
+    "lvl": 2,
+    "fytd": 170045487303.15,
+    "month": 170045487303.15
+   },
+   {
+    "name": "Income Security",
+    "lvl": 2,
+    "fytd": 58482931628.59,
+    "month": 58482931628.59
+   },
+   {
+    "name": "Social Security",
+    "lvl": 2,
+    "fytd": 142687221456.78,
+    "month": 142687221456.78
+   },
+   {
+    "name": "Veterans Benefits and Services",
+    "lvl": 2,
+    "fytd": 54298485848.95,
+    "month": 54298485848.95
+   },
+   {
+    "name": "Administration of Justice",
+    "lvl": 2,
+    "fytd": 8723223119.63,
+    "month": 8723223119.63
+   },
+   {
+    "name": "General Government",
+    "lvl": 2,
+    "fytd": 5004583094.96,
+    "month": 5004583094.96
+   },
+   {
+    "name": "Net Interest",
+    "lvl": 2,
+    "fytd": 103076056306.27,
+    "month": 103076056306.27
+   },
+   {
+    "name": "Undistributed Offsetting Receipts",
+    "lvl": 2,
+    "fytd": -55195091463.41,
+    "month": -55195091463.41
+   }
+  ],
+  "totals": {
+   "receipts": {
+    "fytd": 368940118602.77,
+    "month": 368940118602.77
+   },
+   "outlays": {
+    "fytd": 773003666480.36,
+    "month": 773003666480.36
+   }
+  }
+ },
+ "sum_checks": {
+  "2015-09-30": {
+   "outlay_items_sum": 3687622059038.44,
+   "outlay_total": 3687622059038.44,
+   "receipt_items_sum": 2183445848040.37,
+   "receipt_total": 3248723200915.73
+  },
+  "2016-09-30": {
+   "outlay_items_sum": 3854100140609.65,
+   "outlay_total": 3854100140609.65,
+   "receipt_items_sum": 2151625551815.12,
+   "receipt_total": 3266688370973.35
+  },
+  "2017-09-30": {
+   "outlay_items_sum": 3980605417586.44,
+   "outlay_total": 3980605417586.44,
+   "receipt_items_sum": 2152998378487.09,
+   "receipt_total": 3314893904524.18
+  },
+  "2018-09-30": {
+   "outlay_items_sum": 4107741496584.31,
+   "outlay_total": 4107741496584.31,
+   "receipt_items_sum": 2158045832618.94,
+   "receipt_total": 3328745244718.2
+  },
+  "2019-09-30": {
+   "outlay_items_sum": 4446583636480.58,
+   "outlay_total": 4446583636480.58,
+   "receipt_items_sum": 2219108745342.78,
+   "receipt_total": 3462195610149.2
+  },
+  "2020-09-30": {
+   "outlay_items_sum": 6551872254653.64,
+   "outlay_total": 6551872254653.64,
+   "receipt_items_sum": 2110000569389.9402,
+   "receipt_total": 3419955005765.34
+  },
+  "2021-09-30": {
+   "outlay_items_sum": 6818157647016.83,
+   "outlay_total": 6818157647016.83,
+   "receipt_items_sum": 2731889931143.75,
+   "receipt_total": 4045978858727.41
+  },
+  "2022-09-30": {
+   "outlay_items_sum": 6271507596876.0,
+   "outlay_total": 6271507596876.0,
+   "receipt_items_sum": 3412591911154.63,
+   "receipt_total": 4896119043921.0
+  },
+  "2023-09-30": {
+   "outlay_items_sum": 6134432040451.311,
+   "outlay_total": 6134432040451.31,
+   "receipt_items_sum": 2824829967913.09,
+   "receipt_total": 4439283739920.54
+  },
+  "2024-09-30": {
+   "outlay_items_sum": 6751551633812.29,
+   "outlay_total": 6751551633812.29,
+   "receipt_items_sum": 3209177159301.85,
+   "receipt_total": 4918735644738.25
+  },
+  "2025-09-30": {
+   "outlay_items_sum": 7009973667049.3,
+   "outlay_total": 7009973667049.3,
+   "receipt_items_sum": 3486322574352.58,
+   "receipt_total": 5234616386315.43
+  },
+  "2026-09-30": {
+   "outlay_items_sum": 7395799983313.2295,
+   "outlay_total": 7395799983313.23,
+   "receipt_items_sum": 3591532037799.8896,
+   "receipt_total": 5403326758960.81
+  },
+  "2026-10-31": {
+   "outlay_items_sum": 773003666480.36,
+   "outlay_total": 773003666480.36,
+   "receipt_items_sum": 237465985153.28,
+   "receipt_total": 368940118602.77
+  }
+ }
+}
