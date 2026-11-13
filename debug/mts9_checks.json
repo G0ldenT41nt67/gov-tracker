@@ -15,6 +15,12 @@
     "month": 18042284142.96
    },
    {
+    "name": "Social Insurance and Retirement Receipts",
+    "lvl": 2,
+    "fytd": 131474133449.48999,
+    "month": 131474133449.48999
+   },
+   {
     "name": "Excise Taxes",
     "lvl": 2,
     "fytd": 5929495055.21,
@@ -163,6 +169,10 @@
    "outlays": {
     "fytd": 773003666480.36,
     "month": 773003666480.36
+   },
+   "deficit": {
+    "fytd": -404063547877.58997,
+    "month": -404063547877.58997
    }
   }
  },
@@ -170,79 +180,79 @@
   "2015-09-30": {
    "outlay_items_sum": 3687622059038.44,
    "outlay_total": 3687622059038.44,
-   "receipt_items_sum": 2183445848040.37,
+   "receipt_items_sum": 3248723200915.73,
    "receipt_total": 3248723200915.73
   },
   "2016-09-30": {
    "outlay_items_sum": 3854100140609.65,
    "outlay_total": 3854100140609.65,
-   "receipt_items_sum": 2151625551815.12,
+   "receipt_items_sum": 3266688370973.35,
    "receipt_total": 3266688370973.35
   },
   "2017-09-30": {
    "outlay_items_sum": 3980605417586.44,
    "outlay_total": 3980605417586.44,
-   "receipt_items_sum": 2152998378487.09,
+   "receipt_items_sum": 3314893904524.1797,
    "receipt_total": 3314893904524.18
   },
   "2018-09-30": {
    "outlay_items_sum": 4107741496584.31,
    "outlay_total": 4107741496584.31,
-   "receipt_items_sum": 2158045832618.94,
+   "receipt_items_sum": 3328745244718.1997,
    "receipt_total": 3328745244718.2
   },
   "2019-09-30": {
    "outlay_items_sum": 4446583636480.58,
    "outlay_total": 4446583636480.58,
-   "receipt_items_sum": 2219108745342.78,
+   "receipt_items_sum": 3462195610149.1997,
    "receipt_total": 3462195610149.2
   },
   "2020-09-30": {
    "outlay_items_sum": 6551872254653.64,
    "outlay_total": 6551872254653.64,
-   "receipt_items_sum": 2110000569389.9402,
+   "receipt_items_sum": 3419955005765.3403,
    "receipt_total": 3419955005765.34
   },
   "2021-09-30": {
    "outlay_items_sum": 6818157647016.83,
    "outlay_total": 6818157647016.83,
-   "receipt_items_sum": 2731889931143.75,
+   "receipt_items_sum": 4045978858727.4097,
    "receipt_total": 4045978858727.41
   },
   "2022-09-30": {
    "outlay_items_sum": 6271507596876.0,
    "outlay_total": 6271507596876.0,
-   "receipt_items_sum": 3412591911154.63,
+   "receipt_items_sum": 4896119043921.0,
    "receipt_total": 4896119043921.0
   },
   "2023-09-30": {
    "outlay_items_sum": 6134432040451.311,
    "outlay_total": 6134432040451.31,
-   "receipt_items_sum": 2824829967913.09,
+   "receipt_items_sum": 4439283739920.54,
    "receipt_total": 4439283739920.54
   },
   "2024-09-30": {
    "outlay_items_sum": 6751551633812.29,
    "outlay_total": 6751551633812.29,
-   "receipt_items_sum": 3209177159301.85,
+   "receipt_items_sum": 4918735644738.25,
    "receipt_total": 4918735644738.25
   },
   "2025-09-30": {
    "outlay_items_sum": 7009973667049.3,
    "outlay_total": 7009973667049.3,
-   "receipt_items_sum": 3486322574352.58,
+   "receipt_items_sum": 5234616386315.43,
    "receipt_total": 5234616386315.43
   },
   "2026-09-30": {
    "outlay_items_sum": 7395799983313.2295,
    "outlay_total": 7395799983313.23,
-   "receipt_items_sum": 3591532037799.8896,
+   "receipt_items_sum": 5403326758960.81,
    "receipt_total": 5403326758960.81
   },
   "2026-10-31": {
    "outlay_items_sum": 773003666480.36,
    "outlay_total": 773003666480.36,
-   "receipt_items_sum": 237465985153.28,
+   "receipt_items_sum": 368940118602.77,
    "receipt_total": 368940118602.77
   }
  }
