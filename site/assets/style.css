@@ -196,6 +196,29 @@ details.sum .txt{white-space:pre-line;font-size:14.5px;margin-top:8px;max-height
 .tag.correction{background:var(--ochre);color:#fff}
 .more{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 16px;font-weight:600;cursor:pointer;margin-top:12px}
 
+/* written content */
+.note .meta,.check .meta{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:13.5px;color:var(--muted)}
+.note h3{font-size:18px;margin-top:8px}
+.note p{font-size:15.5px}
+.pnote{font-size:14px;color:var(--muted);background:var(--soft);border-radius:10px;padding:8px 12px}
+.links{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;margin-top:6px}
+.links a{color:var(--muted)}
+.chip.dev{background:var(--ochre-2);color:var(--ink)}
+ul.tight{margin:4px 0 0;padding-left:18px;font-size:14.5px}
+ul.tight li{margin-bottom:4px}
+.check .claim{font-weight:600;margin:8px 0 6px}
+.flagtag{font-size:12.5px;font-weight:800;padding:3px 10px;border-radius:999px;background:var(--soft);color:var(--ink)}
+.f-accurate{background:var(--pine);color:#fff}
+.f-missing_context,.f-unverified{background:var(--ochre-2)}
+.f-misleading,.f-contradicted{background:var(--ochre);color:#fff}
+.dw{padding:24px 26px}
+.dwcols h3{font-size:16px;margin-top:6px}
+ul.ev{padding-left:18px;margin:6px 0 0;font-size:15px}
+ul.ev li{margin-bottom:8px}
+ul.ev .src{margin-left:4px;white-space:nowrap}
+.dwchart{margin-top:14px;padding:14px 16px;background:var(--soft);border-radius:12px}
+.dwchart .bar{background:var(--card)}
+
 /* dialog */
 dialog{border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);padding:24px;max-width:420px;width:92vw;box-shadow:var(--shadow)}
 dialog::backdrop{background:rgba(20,20,15,.45)}

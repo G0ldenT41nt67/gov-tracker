@@ -1,11 +1,30 @@
-{"entries": [
-  {"date": "2026-11-13", "type": "feature", "summary": "First version of the site.",
+{
+ "entries": [
+  {
+   "date": "2026-11-13",
+   "type": "feature",
+   "summary": "First written content, plus three new sections.",
    "items": [
-     "Data pipeline pulls from Treasury, USAspending, Congress.gov, Voteview, the FEC and the congress-legislators dataset",
-     "Money: interactive map of federal spending by purpose and by agency, revenue by source, monthly revenue vs. spending, and the national debt",
-     "Congress: bills with real action (with official summaries and stage tracker), recent roll-call votes, and laws enacted",
-     "Members: all members of Congress with a state map, plus profiles covering bills, votes, committees and campaign money",
-     "Party labels and party-based numbers hidden by default behind the Show party switch",
-     "Your-state setting pins your own senators and representative"
-   ]}
-]}
+    "This week, explained: six plain-English notes for Nov. 6–13 (lame-duck session and the Dec. 11 funding deadline, the Hegseth impeachment referral vote, the new White House chief of staff, the U.S.–China tariff truce, October's deficit, and new laws including the Common Cents Act)",
+    "Developing stories tracker: FY2027 funding, the Hegseth impeachment effort, and the U.S.–China trade truce, each split into confirmed facts and open questions",
+    "Coverage checks: first check (Fortune on the October deficit, labeled Missing context) and the fixed list of 16 outlets, shown on How this works",
+    "Did it work? page: DOGE and tariff revenue, comparing what was promised with official data and independent evaluations, with Treasury charts",
+    "Party breakdowns inside written notes are hidden unless Show party is on",
+    "Bill topic chips now read 'Topic: …' so the topic 'Law' isn't confused with a bill becoming law"
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "type": "feature",
+   "summary": "First version of the site.",
+   "items": [
+    "Data pipeline pulls from Treasury, USAspending, Congress.gov, Voteview, the FEC and the congress-legislators dataset",
+    "Money: interactive map of federal spending by purpose and by agency, revenue by source, monthly revenue vs. spending, and the national debt",
+    "Congress: bills with real action (with official summaries and stage tracker), recent roll-call votes, and laws enacted",
+    "Members: all members of Congress with a state map, plus profiles covering bills, votes, committees and campaign money",
+    "Party labels and party-based numbers hidden by default behind the Show party switch",
+    "Your-state setting pins your own senators and representative"
+   ]
+  }
+ ]
+}

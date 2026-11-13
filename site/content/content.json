@@ -1,1 +1,198 @@
-{"this_week": {"updated": null, "items": []}, "developing": [], "media_checks": []}
+{
+  "this_week": {
+    "updated": "2026-11-13",
+    "period": "Nov. 6–13, 2026",
+    "items": [
+      {
+        "id": "lame-duck",
+        "title": "Congress returns for its last weeks, with a Dec. 11 funding deadline",
+        "status": "developing",
+        "text": "Lawmakers came back on Nov. 9 for the final weeks of the 119th Congress, the 'lame-duck' session after the Nov. 3 elections. The 120th Congress is sworn in on Jan. 3, 2027. The government is running on a stopgap law (H.R. 6500) that keeps agencies funded at last year's levels through Dec. 11. It passed the Senate 90–6 and the House 370–48 and was signed Sept. 2. None of the 12 regular spending bills for fiscal year 2027 has become law. The annual defense bill and a farm bill are also on the agenda.",
+        "links": [
+          {"label": "H.R. 6500 on Congress.gov", "url": "https://www.congress.gov/bill/119th-congress/house-bill/6500"},
+          {"label": "IBTimes on the Dec. 11 deadline", "url": "https://www.ibtimes.com/trump-funding-deadline-democrats-budget-talks-3809411"},
+          {"label": "KPTV on the lame-duck agenda", "url": "https://www.kptv.com/2026/11/07/congress-enters-lame-duck-session-following-midterm-elections/?outputType=amp"}
+        ]
+      },
+      {
+        "id": "hegseth-referral",
+        "title": "House votes 211–204 to set aside impeachment articles against the defense secretary",
+        "status": "settled",
+        "text": "On Nov. 10 the House voted 211–204 to send eight articles of impeachment against Defense Secretary Pete Hegseth to the Judiciary Committee, which effectively shelves them for the rest of this Congress. The articles, introduced by Rep. Thomas Massie of Kentucky, accused Hegseth of waging an unlawful war against Iran, ordering extrajudicial killings, and ignoring laws meant to limit civilian casualties. Hegseth called the effort a farce at a Pentagon briefing hours before the vote. Eighteen members did not vote. A new attempt is possible after the new Congress is seated in January.",
+        "party_note": "By party: Republicans 210 for referral, 1 against (Rep. Massie); Democrats 0 for, 203 against; 1 independent for. 7 Republicans and 11 Democrats did not vote.",
+        "links": [
+          {"label": "Official roll call (House Clerk)", "url": "https://clerk.house.gov/Votes/2026317"},
+          {"label": "Stars and Stripes (AP)", "url": "https://www.stripes.com/theaters/us/2026-11-10/house-vote-hegseth-impeachment-massie-23427346.html"},
+          {"label": "States Newsroom", "url": "https://www.newsfromthestates.com/node/437771"}
+        ]
+      },
+      {
+        "id": "chief-of-staff",
+        "title": "New White House chief of staff",
+        "status": "settled",
+        "text": "On Nov. 6 the President announced that Stephen Miller will replace Susie Wiles as White House chief of staff. Miller had been deputy chief of staff for policy and is one of the main architects of the administration's immigration policies. Wiles, chief of staff since January 2025, will keep working for the President's political organization. The chief of staff is appointed by the President and does not need Senate confirmation.",
+        "links": [
+          {"label": "Associated Press via WSOC", "url": "https://www.wsoctv.com/news/politics/susie-wiles-trumps/CM4VIU47TU3ZTPTSG4EGSVYZSY/"},
+          {"label": "WTTW (AP)", "url": "https://news.wttw.com/node/55387"}
+        ]
+      },
+      {
+        "id": "china-truce",
+        "title": "U.S.–China tariff truce extended to Jan. 10, 2027",
+        "status": "developing",
+        "text": "On Nov. 9 China announced it will keep suspending an extra 24% tariff on U.S. goods for two more months while leaving a 10% tariff in place, starting Nov. 10. This carries out an extension the two governments agreed to in September, which moved the truce's end date from Nov. 10, 2026, to Jan. 10, 2027. Washington took a matching step a few days earlier. A longer-term deal is still being negotiated.",
+        "links": [
+          {"label": "Summary with Reuters and Chinese government sources", "url": "https://stockanalysis.com/news/china-extends-tariff-suspension/"},
+          {"label": "South China Morning Post", "url": "https://www.scmp.com/economy/china-economy/article/3373904/xi-and-trumps-apec-meeting-whats-hold-and-whats-table"}
+        ]
+      },
+      {
+        "id": "october-deficit",
+        "title": "The new fiscal year opens with a $404 billion October deficit",
+        "status": "settled",
+        "text": "Treasury's first monthly statement for fiscal year 2027 shows $369 billion collected and $773 billion spent in October, a $404 billion gap. October 2025's gap was $284 billion. Part of the October total is a calendar effect: payments normally made on Nov. 1 went out in October because Nov. 1 fell on a weekend. The same thing happened in 2025, so it doesn't explain the year-over-year jump by itself. The Congressional Budget Office's early estimate was $409 billion. Its figures come out a few days before Treasury's.",
+        "links": [
+          {"label": "Treasury, Monthly Treasury Statement", "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/"},
+          {"label": "Fortune on CBO's estimate", "url": "https://fortune.com/2026/11/10/cbo-october-budget-treasury-deficit-100-billion-weekly/"}
+        ]
+      },
+      {
+        "id": "new-laws",
+        "title": "Four bills become law; four more sent to the President, including ending the penny",
+        "status": "settled",
+        "text": "Four bills became law on Nov. 10: one raising the debt limits for small-business and wage-earner bankruptcies, one strengthening the IRS's Taxpayer Advocate office, one creating Medicare billing codes for ultralight wheelchairs, and one making the National Churchill Museum in Missouri a national historic landmark. On Nov. 12 Congress sent four more to the President. The best known, the Common Cents Act, would end production of the penny for general circulation and require cash payments to be rounded to the nearest 5 cents. The penny would stay legal tender. The others give state police-training agencies access to FBI criminal history records, rename Social Security's claiming ages, and rename Saratoga National Historical Park.",
+        "links": [
+          {"label": "Common Cents Act (H.R. 10167)", "url": "https://www.congress.gov/bill/119th-congress/house-bill/10167"},
+          {"label": "Bankruptcy Threshold Adjustment Act (H.R. 7730)", "url": "https://www.congress.gov/bill/119th-congress/house-bill/7730"},
+          {"label": "All laws this Congress", "url": "#congress-laws"}
+        ]
+      }
+    ]
+  },
+
+  "developing": [
+    {
+      "id": "fy2027-funding",
+      "title": "Funding the government for fiscal year 2027",
+      "opened": "2026-11-09",
+      "last_checked": "2026-11-13",
+      "status": "developing",
+      "confirmed": [
+        "Agencies are funded at fiscal year 2026 levels through Dec. 11, 2026, under H.R. 6500, signed Sept. 2.",
+        "None of the 12 regular fiscal year 2027 spending bills has become law.",
+        "If nothing passes, funding lapses on Dec. 12."
+      ],
+      "unknown": [
+        "Whether Congress passes full-year bills, another short-term extension, or neither before Dec. 11.",
+        "Whether any deal carries over into the new Congress in January."
+      ],
+      "links": [{"label": "H.R. 6500", "url": "https://www.congress.gov/bill/119th-congress/house-bill/6500"}]
+    },
+    {
+      "id": "hegseth-impeachment",
+      "title": "Impeachment effort against Defense Secretary Hegseth",
+      "opened": "2026-11-10",
+      "last_checked": "2026-11-13",
+      "status": "developing",
+      "confirmed": [
+        "The House voted 211–204 on Nov. 10 to refer the articles to the Judiciary Committee.",
+        "The articles concern the war with Iran, alleged extrajudicial killings, and laws on civilian casualties."
+      ],
+      "unknown": [
+        "Whether the articles, or new ones, are brought up after the new Congress is seated Jan. 3, 2027.",
+        "Any committee action on the referred articles before then."
+      ],
+      "links": [{"label": "Official roll call", "url": "https://clerk.house.gov/Votes/2026317"}]
+    },
+    {
+      "id": "us-china-trade",
+      "title": "U.S.–China trade truce",
+      "opened": "2026-11-09",
+      "last_checked": "2026-11-13",
+      "status": "developing",
+      "confirmed": [
+        "China's extra 24% tariff on U.S. goods stays suspended through Jan. 10, 2027. A 10% tariff remains.",
+        "The extension carries out an agreement the two governments reached in September."
+      ],
+      "unknown": [
+        "Whether a longer-term deal is reached before Jan. 10, 2027.",
+        "Whether either side changes tariffs before then."
+      ],
+      "links": [{"label": "Summary with sources", "url": "https://stockanalysis.com/news/china-extends-tariff-suspension/"}]
+    }
+  ],
+
+  "media_checks": [
+    {
+      "id": "oct-deficit-weekly",
+      "date": "2026-11-13",
+      "story": "October deficit",
+      "outlet": "Fortune",
+      "claim": "Describes the $409 billion October deficit as \"more than $100 billion a week.\"",
+      "label": "missing_context",
+      "explanation": "$409 billion works out to about $102 billion a week only if October is counted as four weeks. October has 31 days (about 4.4 weeks), which works out to roughly $92 billion a week. The article also cites the Nov. 1 weekend payment shift as a reason October's deficit was higher than last year's, but notes the same shift happened in October 2025, so the shift alone can't account for the difference.",
+      "evidence": [
+        {"label": "The article", "url": "https://fortune.com/2026/11/10/cbo-october-budget-treasury-deficit-100-billion-weekly/"},
+        {"label": "Treasury monthly data", "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/"}
+      ]
+    }
+  ],
+
+  "media_list": {
+    "note": "Coverage checks draw from this fixed list so comparisons are apples to apples. The list can be expanded or trimmed in any update; changes are logged.",
+    "outlets": ["Associated Press", "Reuters", "Bloomberg", "The Wall Street Journal", "The New York Times", "The Washington Post", "USA Today", "NPR", "PBS NewsHour", "ABC News", "CBS News", "NBC News", "CNN", "Fox News", "New York Post", "The Hill"]
+  },
+
+  "did_it_work": [
+    {
+      "id": "doge",
+      "name": "Department of Government Efficiency (DOGE)",
+      "type": "Executive order",
+      "dates": "Jan. 20, 2025 – July 4, 2026",
+      "status": "Ended",
+      "goal": "Cut federal spending by eliminating waste, fraud and abuse, and shrink the federal workforce.",
+      "promised": [
+        {"text": "Elon Musk, who led the effort, set a target of $2 trillion in spending cuts and later lowered it to $1 trillion.", "source": {"label": "Fox Business", "url": "https://www.foxbusiness.com/politics/doge-website-deactivates-after-reaching-self-termination-deadline-come-end"}},
+        {"text": "The order creating DOGE set its own end date of July 4, 2026.", "source": {"label": "Fox Business", "url": "https://www.foxbusiness.com/politics/doge-website-deactivates-after-reaching-self-termination-deadline-come-end"}}
+      ],
+      "happened": [
+        {"text": "DOGE's final public tally claimed $215 billion in savings. Its published receipts do not fully document that figure.", "source": {"label": "Fox Business", "url": "https://www.foxbusiness.com/politics/doge-website-deactivates-after-reaching-self-termination-deadline-come-end"}},
+        {"text": "The Cato Institute, which supported DOGE's goals, found no break in total federal spending that lines up with DOGE's start. It noted that most spending is entitlements, which only Congress can cut.", "source": {"label": "Cato Institute", "url": "https://www.cato.org/blog/doge-produced-largest-peacetime-workforce-cut-record-spending-kept-rising-0"}},
+        {"text": "Cato also found federal employment fell by about 271,000, which it called the largest peacetime workforce cut on record.", "source": {"label": "Cato Institute", "url": "https://www.cato.org/blog/doge-produced-largest-peacetime-workforce-cut-record-spending-kept-rising-0"}},
+        {"text": "DOGE effectively stopped operating as a central unit in November 2025, eight months before its formal end, after Musk left in May 2025.", "source": {"label": "Time", "url": "https://time.com/7336327/doge-disbanded-elon-musk/"}},
+        {"text": "The federal government posted more than 104,000 job openings in the first five months of 2026, up from about 68,000 in the last five months of 2025.", "source": {"label": "The Fiscal Times", "url": "https://www.thefiscaltimes.com/2026/07/06/DOGE-Officially-Done"}}
+      ],
+      "chart": {"series": "outlays", "from": 2022, "label": "Total federal spending by fiscal year (Treasury)"},
+      "open": [
+        "Whether the workforce reductions saved money over time, once rehiring and contractor costs are counted.",
+        "How many of the cancelled contracts and grants stay cancelled after court challenges."
+      ]
+    },
+    {
+      "id": "tariff-revenue",
+      "name": "Tariffs as a source of federal revenue",
+      "type": "Executive orders under several trade laws",
+      "dates": "2025 – present",
+      "status": "Ongoing (some tariffs struck down)",
+      "goal": "This entry tracks only the revenue promises. Supporters also describe tariffs as a tool to bring back manufacturing and gain leverage in trade talks; those goals need their own entries.",
+      "promised": [
+        {"text": "When announcing broad new tariffs on April 2, 2025, the President said the revenue would reduce taxes and pay down the national debt, describing it in the trillions of dollars.", "source": {"label": "PBS NewsHour / PolitiFact", "url": "https://www.pbs.org/newshour/politics/fact-checking-trumps-promise-to-give-americans-2000-payments-from-tariff-dividends"}},
+        {"text": "In November 2025 the President proposed $2,000 payments to low- and middle-income Americans from tariff revenue, with the rest going to pay down the debt.", "source": {"label": "PBS NewsHour / PolitiFact", "url": "https://www.pbs.org/newshour/politics/fact-checking-trumps-promise-to-give-americans-2000-payments-from-tariff-dividends"}},
+        {"text": "In January 2026 the President said tariff revenue could pay for a 50% increase in the military budget while also paying down debt and funding dividends.", "source": {"label": "FactCheck.org", "url": "https://www.factcheck.org/2026/01/trumps-tariffs-dont-come-close-to-funding-everything-hes-proposed/"}}
+      ],
+      "happened": [
+        {"text": "Customs duties (the chart below) rose from $77 billion in fiscal 2024 to $195 billion in fiscal 2025, then fell to $173 billion in fiscal 2026.", "source": {"label": "Treasury, Monthly Treasury Statement", "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/"}},
+        {"text": "On Feb. 20, 2026, the Supreme Court ruled 6–3 that the emergency-powers law used for the broadest tariffs (IEEPA) does not let the President impose tariffs. Collection of those tariffs stopped on Feb. 24.", "source": {"label": "A&O Shearman", "url": "https://www.aoshearman.com/en/insights/scotus-rejects-ieepa-tariffs-refund-opportunities-and-uncertainty-emerge"}},
+        {"text": "The Penn Wharton Budget Model estimated that importers could be owed up to $175 billion in refunds for those tariffs.", "source": {"label": "Penn Wharton Budget Model", "url": "https://budgetmodel.wharton.upenn.edu/p/2026-02-20-supreme-court-tariff-ruling/"}},
+        {"text": "The Congressional Budget Office lowered its fiscal 2026 customs revenue estimate by about $250 billion from its February projection, in part because of the ruling.", "source": {"label": "The National News Desk, citing CBO", "url": "https://newschannel9.com/news/nation-world/fact-check-team-tariffs-are-bringing-in-billions-but-arent-close-to-solving-the-deficit-economic"}},
+        {"text": "The national debt kept rising and passed $40 trillion in August 2026.", "source": {"label": "The National News Desk", "url": "https://wjla.com/news/nation-world/fact-check-team-tariffs-are-bringing-in-billions-but-arent-close-to-solving-the-deficit-economic"}}
+      ],
+      "chart": {"series": "customs", "from": 2018, "label": "Customs duties collected by fiscal year (Treasury)"},
+      "open": [
+        "How much will actually be refunded to importers, and when.",
+        "How much revenue replacement tariffs under other laws will raise.",
+        "Whether any tariff-funded payments to individuals will be authorized by Congress."
+      ]
+    }
+  ]
+}

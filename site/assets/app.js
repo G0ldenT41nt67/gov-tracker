@@ -41,6 +41,24 @@ const PARTY_ABBR = {Democrat: 'D', Republican: 'R', Independent: 'I', Libertaria
 const partyChip = p => p ? `<span class="pchip party" title="${esc(p)}">${esc(PARTY_ABBR[p] || p[0] || '?')}</span>` : '';
 const src = (label, url) => `<span class="src">Source: <a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a></span>`;
 
+const ext = url => url.startsWith('#') ? '' : ' target="_blank" rel="noopener"';
+const links = ls => (ls || []).length ? `<div class="links">${ls.map(l => `<a href="${esc(l.url)}"${ext(l.url)}>${esc(l.label)}</a>`).join('')}</div>` : '';
+const FLAG = {accurate: 'Accurate', missing_context: 'Missing context', misleading: 'Misleading framing', contradicted: 'Contradicted by the record', unverified: 'Unverified'};
+function noteCard(n) {
+  return `<article class="card note" id="note-${esc(n.id)}"><div class="meta">${n.status === 'developing' ? '<span class="chip dev">Developing · confirmed facts only</span>' : '<span class="chip">Settled</span>'}</div>
+    <h3>${esc(n.title)}</h3><p>${esc(n.text)}</p>${n.party_note ? `<p class="party blk pnote">${esc(n.party_note)}</p>` : ''}${links(n.links)}</article>`;
+}
+function devCard(d) {
+  return `<article class="card dev-card"><div class="card-h" style="margin-bottom:6px"><h3 style="margin:0">${esc(d.title)}</h3><span class="chip ${d.status === 'developing' ? 'dev' : ''}">${d.status === 'developing' ? 'Developing' : 'Settled, follow-up below'}</span></div>
+    <div class="src">Tracking since ${date(d.opened)} · last checked ${date(d.last_checked)}</div>
+    <div class="grid g2" style="gap:16px;margin-top:10px"><div><div class="lbl small"><b>Confirmed</b></div><ul class="tight">${(d.confirmed || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>
+    <div><div class="lbl small"><b>Not yet known</b></div><ul class="tight">${(d.unknown || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul></div></div>
+    ${d.followup ? `<div class="notice"><b>Follow-up, ${date(d.followup.date)}:</b> ${esc(d.followup.text)}${(d.followup.early_errors || []).length ? `<br><b>What early reporting got wrong:</b> ${d.followup.early_errors.map(esc).join(' ')}` : ''}</div>` : ''}${links(d.links)}</article>`;
+}
+function checkCard(c) {
+  return `<article class="card check"><div class="meta"><span class="flagtag f-${esc(c.label)}">${esc(FLAG[c.label] || c.label)}</span><span>${esc(c.outlet)} · ${esc(c.story)} · checked ${date(c.date)}</span></div>
+    <p class="claim">${esc(c.claim)}</p><p>${esc(c.explanation)}</p>${links(c.evidence)}</article>`;
+}
 /* ---------- states ---------- */
 const STATES = {AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',CT:'Connecticut',DE:'Delaware',DC:'District of Columbia',FL:'Florida',GA:'Georgia',HI:'Hawaii',ID:'Idaho',IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',NH:'New Hampshire',NJ:'New Jersey',NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',OR:'Oregon',PA:'Pennsylvania',RI:'Rhode Island',SC:'South Carolina',SD:'South Dakota',TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',VA:'Virginia',WA:'Washington',WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming',AS:'American Samoa',GU:'Guam',MP:'Northern Mariana Islands',PR:'Puerto Rico',VI:'U.S. Virgin Islands'};
 // tile-grid map: [row, col]
@@ -183,7 +201,7 @@ function billCard(b, {summary = true} = {}) {
   const sp = b.sponsor, m = sp && D.byId[sp.id];
   return `<article class="card bill">
     <div class="bill-top"><div>
-      <div class="meta"><span class="bid">${esc(billName(b))}</span>${b.policy_area ? `<span class="chip">${esc(b.policy_area)}</span>` : ''}${b.stage === 'law' ? '<span class="chip law">Enacted</span>' : ''}${(b.cbo || []).length ? `<a class="chip cbo" href="${esc(b.cbo[0].url)}" target="_blank" rel="noopener">CBO cost estimate</a>` : ''}</div>
+      <div class="meta"><span class="bid">${esc(billName(b))}</span>${b.policy_area ? `<span class="chip">Topic: ${esc(b.policy_area)}</span>` : ''}${b.stage === 'law' ? '<span class="chip law">Enacted</span>' : ''}${(b.cbo || []).length ? `<a class="chip cbo" href="${esc(b.cbo[0].url)}" target="_blank" rel="noopener">CBO cost estimate</a>` : ''}</div>
       <h3><a href="${billUrl(b)}" target="_blank" rel="noopener">${esc(b.title)}</a></h3>
       ${sp ? `<div class="meta">Sponsor: ${m ? `<a href="#member-${esc(sp.id)}">${esc(m.name)}</a>` : esc((sp.name || '').replace(/\s*\[.*\]$/, ''))} ${partyChip(m?.party || ({D:'Democrat',R:'Republican',I:'Independent'})[sp.party])} · ${esc(sp.state || '')}${b.cosponsors ? ` · ${plural(b.cosponsors, 'cosponsor')}` : ''}${b.introduced ? ` · introduced ${date(b.introduced)}` : ''}</div>` : ''}
     </div></div>
@@ -249,8 +267,8 @@ V.week = () => {
   </div>` : '<div class="empty">Spending data appears after the first data refresh.</div>'}
   </section>
 
-  ${notes?.items?.length ? `<section class="section"><h2>This week, explained</h2><p class="muted">Written ${date(notes.updated)}. Facts link to sources; anything still developing is marked.</p>
-    <div class="grid g2">${notes.items.map(n => `<article class="card"><h3>${esc(n.title)}</h3>${n.status === 'developing' ? '<span class="chip">Developing: confirmed facts only</span>' : ''}<p>${esc(n.text)}</p>${(n.links || []).map(l => src(l.label, l.url)).join(' ')}</article>`).join('')}</div></section>` : ''}
+  ${notes?.items?.length ? `<section class="section"><div class="card-h"><div><h2>This week, explained</h2><div class="muted">${esc(notes.period || '')} · written ${date(notes.updated)}. Each item links to its sources.</div></div></div>
+    <div class="grid g2">${notes.items.map(noteCard).join('')}</div></section>` : ''}
 
   <section class="section">
     <div class="card-h"><div><h2>Bills that moved in the last two weeks</h2><div class="muted">Bills and joint resolutions (the kinds that can become law) with action past introduction.</div></div><a href="#congress">All moving bills →</a></div>
@@ -263,7 +281,11 @@ V.week = () => {
     <section><div class="card-h"><h2>Your delegation</h2>${dl ? `<button class="more" style="margin:0" data-act="home">Change</button>` : ''}</div>
       ${dl ? `<div class="list">${dl.map(memberCard).join('')}</div>` : `<div class="card"><p>Pick your state (and House district, if you know it) to pin your senators and representative here.</p><button class="solid" data-act="home">Set your state</button></div>`}
     </section>
-  </div>`;
+  </div>
+  ${D.content?.developing?.length ? `<section class="section"><h2>Developing stories</h2><p class="muted">Still unfolding. Only confirmed facts are listed. Each one gets a full follow-up when it settles, including anything early reporting got wrong.</p>
+    <div class="list">${D.content.developing.map(devCard).join('')}</div></section>` : ''}
+  ${D.content?.media_checks?.length ? `<section class="section"><h2>Coverage checks</h2><p class="muted">News coverage and public statements checked against the record. Every outlet and official gets the same labels. <a href="#about">How the labels work</a>.</p>
+    <div class="list">${D.content.media_checks.map(checkCard).join('')}</div></section>` : ''}`;
 };
 
 V.money = () => {
@@ -484,6 +506,33 @@ V.member = id => {
   </div>`;
 };
 
+V.results = () => {
+  const items = D.content?.did_it_work || [];
+  return `<section class="hero" style="grid-template-columns:1fr"><div><div class="kicker">Did it work?</div><h1>What was promised, and what actually happened</h1>
+    <p class="lede">Big laws and programs, followed up after the headlines fade. What supporters said each one would do, set beside official data and independent evaluations. No verdicts: you decide.</p></div></section>
+    <div class="filters">${items.map(it => `<a class="tab" href="#results-${esc(it.id)}" style="text-decoration:none">${esc(it.name)}</a>`).join('')}</div>
+    <div class="list">${items.map(it => `<article class="card dw" id="dw-${esc(it.id)}">
+      <div class="card-h"><div><div class="kicker">${esc(it.type)} · ${esc(it.dates)}</div><h2 style="font-size:26px">${esc(it.name)}</h2></div><span class="chip">${esc(it.status)}</span></div>
+      <p class="muted">${esc(it.goal)}</p>
+      <div class="grid g2 dwcols"><div><h3>What was promised</h3><ul class="ev">${it.promised.map(p => `<li>${esc(p.text)} <a class="src" href="${esc(p.source.url)}" target="_blank" rel="noopener">${esc(p.source.label)}</a></li>`).join('')}</ul></div>
+      <div><h3>What happened</h3><ul class="ev">${it.happened.map(p => `<li>${esc(p.text)} <a class="src" href="${esc(p.source.url)}" target="_blank" rel="noopener">${esc(p.source.label)}</a></li>`).join('')}</ul></div></div>
+      ${it.chart ? `<div class="dwchart"><div class="lbl small muted">${esc(it.chart.label)}</div><div class="bars" data-chart="${esc(it.id)}"></div></div>` : ''}
+      ${it.open?.length ? `<div class="notice" style="margin-top:14px"><b>Still open:</b><ul class="tight" style="margin:4px 0 0">${it.open.map(o => `<li>${esc(o)}</li>`).join('')}</ul></div>` : ''}
+    </article>`).join('') || '<div class="empty">No entries yet.</div>'}</div>`;
+};
+V.results.after = arg => {
+  (D.content?.did_it_work || []).forEach(it => {
+    const el = document.querySelector(`[data-chart="${it.id}"]`);
+    if (!el || !D.money) return;
+    const ys = D.money.years.filter(y => y.complete && y.fy >= (it.chart.from || 0));
+    const val = y => it.chart.series === 'outlays' ? y.outlays : it.chart.series === 'receipts' ? y.receipts
+      : (y.sources.find(s => s.name.toLowerCase().includes(it.chart.series)) || {}).amount;
+    const rows = ys.map(y => ({fy: y.fy, v: val(y)})).filter(r => r.v != null), mx = Math.max(...rows.map(r => r.v));
+    el.innerHTML = rows.map(r => `<div class="row" style="grid-template-columns:64px minmax(0,1fr) 84px"><span>FY${r.fy}</span><span class="bar"><i style="width:${r.v / mx * 100}%"></i></span><span class="amt">${money(r.v)}</span></div>`).join('');
+  });
+  if (arg) document.getElementById('dw-' + arg)?.scrollIntoView({block: 'start'});
+};
+
 V.about = () => `<div class="prose">
   <div class="kicker">How this works</div><h1>Rules this site follows</h1>
   <p class="lede">The goal is simple: show what the government is actually doing, with sources, so you can draw your own conclusions.</p>
@@ -514,6 +563,7 @@ V.about = () => `<div class="prose">
     <div class="flag"><b>Contradicted by the record</b>The official record says otherwise. We say "false," not "lie": intent usually can't be proven.</div>
     <div class="flag"><b>Unverified</b>Can't be confirmed or ruled out yet.</div>
   </div>
+  ${D.content?.media_list ? `<p><b>Outlets checked:</b> ${D.content.media_list.outlets.map(esc).join(', ')}. ${esc(D.content.media_list.note)}</p>` : ''}
   <h2>Contested issues</h2>
   <p>Where people disagree, the site lays out tradeoffs (what a policy does, who benefits, who pays, what the evidence shows, what's unknown) instead of sides. Arguments are credited by expertise, not team.</p>
   <h2>Mistakes</h2>
