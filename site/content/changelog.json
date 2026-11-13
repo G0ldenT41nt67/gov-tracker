@@ -1,0 +1,11 @@
+{"entries": [
+  {"date": "2026-11-13", "type": "feature", "summary": "First version of the site.",
+   "items": [
+     "Data pipeline pulls from Treasury, USAspending, Congress.gov, Voteview, the FEC and the congress-legislators dataset",
+     "Money: interactive map of federal spending by purpose and by agency, revenue by source, monthly revenue vs. spending, and the national debt",
+     "Congress: bills with real action (with official summaries and stage tracker), recent roll-call votes, and laws enacted",
+     "Members: all members of Congress with a state map, plus profiles covering bills, votes, committees and campaign money",
+     "Party labels and party-based numbers hidden by default behind the Show party switch",
+     "Your-state setting pins your own senators and representative"
+   ]}
+]}

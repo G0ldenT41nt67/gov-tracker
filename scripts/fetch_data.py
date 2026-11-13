@@ -112,9 +112,11 @@ def fd_all(path, params):
 
 
 def parse_mts9(rs):
-    """Monthly Treasury Statement table 9: receipts by source, outlays by function."""
+    """Monthly Treasury Statement table 9: receipts by source, outlays by function.
+    Group headers (e.g. 'Social Insurance and Retirement Receipts:') carry no amount;
+    their value is the sum of the deeper rows beneath them."""
     rs = sorted(rs, key=lambda r: num(r.get('src_line_nbr')) or num(r.get('sequence_number_cd')) or 0)
-    sec, groups = None, {}
+    sec, group = None, None
     out = {'receipts': [], 'outlays': [], 'totals': {}}
     for r in rs:
         d = (r.get('classification_desc') or '').strip()
@@ -122,31 +124,40 @@ def parse_mts9(rs):
         fytd = num(r.get('current_fytd_rcpt_outly_amt'))
         mon = num(r.get('current_month_rcpt_outly_amt'))
         lvl = int(num(r.get('sequence_level_nbr')) or 0)
+        if group and lvl <= group['lvl']:
+            group = None
         if fytd is None and mon is None:
             if dl.startswith('receipts'):
-                sec, groups = 'receipts', {}
+                sec = 'receipts'
             elif 'outlays' in dl:
-                sec, groups = 'outlays', {}
+                sec = 'outlays'
             elif sec:
-                groups[dl] = (d, lvl)
+                group = {'name': d.rstrip(':').strip(), 'lvl': lvl, 'fytd': 0.0, 'month': 0.0}
+                out[sec].append(group)
             continue
         if dl.startswith('total'):
-            rest = re.sub(r'^total\W*', '', dl).strip()
-            if rest in groups:
-                name, glvl = groups.pop(rest)
-                out[sec].append({'name': name, 'lvl': glvl, 'fytd': fytd, 'month': mon})
-            elif sec:
+            if sec:
                 out['totals'][sec] = {'fytd': fytd, 'month': mon}
             continue
         if 'surplus' in dl or 'deficit' in dl:
             out['totals']['deficit'] = {'fytd': fytd, 'month': mon}
             continue
-        if sec:
-            out[sec].append({'name': d, 'lvl': lvl, 'fytd': fytd, 'month': mon})
+        if not sec:
+            continue
+        if group and lvl > group['lvl']:
+            group['fytd'] += fytd or 0
+            group['month'] += mon or 0
+        out[sec].append({'name': d, 'lvl': lvl, 'fytd': fytd, 'month': mon})
     for s in ('receipts', 'outlays'):
         if out[s]:
             top = min(i['lvl'] for i in out[s])
             out[s] = [i for i in out[s] if i['lvl'] == top]
+    for k in ('fytd', 'month'):
+        if 'deficit' not in out['totals'] and out['totals'].get('receipts') and out['totals'].get('outlays'):
+            out['totals']['deficit'] = {}
+        if out['totals'].get('deficit') is not None and out['totals']['deficit'].get(k) is None \
+                and out['totals'].get('receipts') and out['totals'].get('outlays'):
+            out['totals']['deficit'][k] = out['totals']['receipts'][k] - out['totals']['outlays'][k]
     return out
 
 
@@ -557,11 +568,8 @@ def finance():
                 rec = {'fec_id': r.get('candidate_id'), 'cycle': r.get('cycle') or cycle,
                        'receipts': num(r.get('receipts')), 'disbursements': num(r.get('disbursements')),
                        'cash_on_hand': num(r.get('cash_on_hand_end_period')),
-                       'individual': num(r.get('individual_itemized_contributions')) if r.get('individual_contributions') is None else num(r.get('individual_contributions')),
+                       'individual_itemized': num(r.get('individual_itemized_contributions')),
                        'pac': num(r.get('other_political_committee_contributions')),
-                       'party_cmte': num(r.get('political_party_committee_contributions')),
-                       'self': num(r.get('candidate_contribution')),
-                       'loans_self': num(r.get('loans_made_by_candidate')),
                        'coverage_end': (r.get('coverage_end_date') or '')[:10]}
                 if bid not in found or (rec['receipts'] or 0) > (found[bid]['receipts'] or 0):
                     found[bid] = rec
